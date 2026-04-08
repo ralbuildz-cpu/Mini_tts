@@ -35,6 +35,8 @@ import numpy as np
 import torch
 from torch.utils.data import Dataset, DataLoader
 
+import sys, os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 from models.audio_config import AudioConfig
 from models.phoneme_vocab import PhonemeVocab, PAD_ID
 
